@@ -1,61 +1,155 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>portfolio site</title>
-        <meta name="description" content="課題で作ったポートフォリオサイト">
+@charset "UTF-8";
 
-        <!-- reset.css ress -->
-            <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
-            <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;700&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="css/style.css">
+/*共通部分
+--------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Midium" ,Yugothic, "游ゴシック体" ,"ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+max-width: 100%;
+}
+.main-nav{
+    display: flex;
+    justify-content: center;  
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0ba;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
 
-            <link rel="icon" type="image/png" sizes="16x16"  href="images/favicon-16x16.png">
-            <meta name="msapplication-TileColor" content="#ffffff">
-            <meta name="theme-color" content="#ffffff">
-    </head>
+/* HOME
+-----------------------------------*/
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
 
+/* 見出し */
+.page-title {
+    font-size: 4rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    display: flex; /* Flexboxを使用 */
+    flex-direction: column; /* 縦方向に並べる */
+    justify-content: center; /* 垂直方向に中央揃え */
+    align-items: center; /* 水平方向に中央揃え */
+}
 
-    <body>
-        <div id="home" class="big-bg">
-            <header class="page-header wrapper">
-                <nav>
-                    <ul class="main-nav">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-    
-            <div class="home-content wrapper">
-                <p>kadai de tukutta site</p>
-                <a class="page-title" href="#home">Portfolio</a>
-                <a class="scroll" href="#message">▼ scroll</a>
-            </div><!-- /.home-content -->
-        </div><!-- /#home -->
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
 
-        <div id="message" class="text">
-            <h2>つなぐデザイン</h2>
-            <p>デザインを通じて、思いや価値がつながるものを作っていきます。</p>
-            <a class="button" href="request.html">ご依頼はこちら</a>
-        </div>
+#home {
+    background-image: url(../images/sky-main.jpg);
+    min-height: 100vh;
+    background-size: 100% 100%; /* 修正 */
+    background-repeat: no-repeat; /* 追加：画像の繰り返しを防ぐ */
+    background-position: center; /* 追加：画像を中央に配置 */
+    background-color: rgb(255, 247, 236, 50%);
+    background-blend-mode: overlay;
+}
+#home .page-title {
+    text-transform: none;
+    position: relative;
+    top: 30px; /* 相対位置を調整 */
+    color: #432;
+}
+#home .page-title:hover {
+    color: #7d7d7c;
 
-        <div class="profile">
-            <h2><span class="name">浅井 美咲（Misaki Asai）</span></h2>
-            <p>1996年、大阪府大阪市生まれ。</p>
-            <p>新卒で大手IT企業に入社後、営業職を7年経験。</p>
-            <p>新規チームの立ち上げも経験し、転職。現在も営業職でキャリアを磨いています。</p>
-            <p>バナー制作やライティングのスキルで、お客様のビジネスを支援します。</p>
-        </div>
-  
-    </body>
+}
 
+#home .home-content {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+}
 
-    <footer>
-        <div class="wrapper">
-            <p><small>&copy;2024 Portfolio All Rights Reserved.</small></p>
-        </div>
-    </footer>
-</html>
+#home .scroll {
+    margin-top: 200px; /* 上に100pxの余白を追加 */
+    position: relative;
+    top: 300px; /* 相対位置を調整 */
+    color: #432;
+}
+#home .scroll:hover {
+    color: #0ba;
+}
+
+#message {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    display: flex; /* Flexboxを使用 */
+    flex-direction: column; /* 縦方向に並べる */
+    justify-content: center; /* 垂直方向に中央揃え */
+    align-items: center; /* 水平方向に中央揃え */
+}
+
+/* ボタン */
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+    margin-top: 20px;
+}
+.button:hover {
+    background: #0090aa;
+}
+
+.profile {
+    margin: 0 0 0 200px;
+    background-color: #fff;
+    height: 200px;
+}
+
+.name {
+    padding: 5px 0 5px 0;
+    background: linear-gradient(transparent 50%, rgb(207, 228, 228) 50%);
+
+}
+
+footer{
+    background-color: #e4e4e2;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color: #7d7d7c;
+    font-size: 0.875rem;
+}
