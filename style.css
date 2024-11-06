@@ -73,7 +73,7 @@ max-width: 100%;
 }
 
 #home {
-    background-image: url(../images/sky-main.jpg);
+    background-image: sky-main.jpg;
     min-height: 100vh;
     background-size: 100% 100%; /* 修正 */
     background-repeat: no-repeat; /* 追加：画像の繰り返しを防ぐ */
