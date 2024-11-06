@@ -78,6 +78,8 @@ max-width: 100%;
     background-size: 100% 100%; /* 修正 */
     background-repeat: no-repeat; /* 追加：画像の繰り返しを防ぐ */
     background-position: center; /* 追加：画像を中央に配置 */
+    background-color: rgb(255, 247, 236, 50%);
+    background-blend-mode: overlay;
 }
 #home .page-title {
     text-transform: none;
