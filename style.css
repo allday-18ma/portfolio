@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>portfolio site</title>
+        <meta name="description" content="課題で作ったポートフォリオサイト">
+
+        <!-- reset.css ress -->
+            <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
+            <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/style.css">
+
+            <link rel="icon" type="image/png" sizes="16x16"  href="images/favicon-16x16.png">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="theme-color" content="#ffffff">
+    </head>
+
+
+    <body>
+        <div id="home" class="big-bg">
+            <header class="page-header wrapper">
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <div class="home-content wrapper">
+                <p>kadai de tukutta site</p>
+                <a class="page-title" href="#home">Portfolio</a>
+                <a class="scroll" href="#message">▼ scroll</a>
+            </div><!-- /.home-content -->
+        </div><!-- /#home -->
+
+        <div id="message" class="text">
+            <h2>つなぐデザイン</h2>
+            <p>デザインを通じて、思いや価値がつながるものを作っていきます。</p>
+            <a class="button" href="request.html">ご依頼はこちら</a>
+        </div>
+
+        <div class="profile">
+            <h2><span class="name">浅井 美咲（Misaki Asai）</span></h2>
+            <p>1996年、大阪府大阪市生まれ。</p>
+            <p>新卒で大手IT企業に入社後、営業職を7年経験。</p>
+            <p>新規チームの立ち上げも経験し、転職。現在も営業職でキャリアを磨いています。</p>
+            <p>バナー制作やライティングのスキルで、お客様のビジネスを支援します。</p>
+        </div>
+  
+    </body>
+
+
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy;2024 Portfolio All Rights Reserved.</small></p>
+        </div>
+    </footer>
+</html>
