@@ -12,6 +12,7 @@ body{
 }
 a {
     text-decoration: none;
+    color: #432;
 }
 img {
 max-width: 100%;
@@ -73,7 +74,7 @@ max-width: 100%;
 }
 
 #home {
-    background-image: url("https://github.com/allday-18ma/portfolio/blob/main/sky-main.jpg?raw=true");
+    background-image: url(../images/sky-main.jpg);
     min-height: 100vh;
     background-size: 100% 100%; /* 修正 */
     background-repeat: no-repeat; /* 追加：画像の繰り返しを防ぐ */
@@ -153,3 +154,96 @@ footer p{
     color: #7d7d7c;
     font-size: 0.875rem;
 }
+
+/* About
+-----------------------------------*/
+.page-top {
+    background-color: #f1f1f1;
+    height: 60px;
+    width: 100%;
+}
+
+/* Header styling */
+.head.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+/* Title styling */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+
+/* Navigation styling */
+.main-nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.aboutwrapper {
+    margin: 100px 100px;
+
+}
+
+
+/* portfolio
+-----------------------------------*/
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1ir 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* contact
+-----------------------------------*/
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #000000 solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+
